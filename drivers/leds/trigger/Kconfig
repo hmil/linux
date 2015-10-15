@@ -115,4 +115,11 @@ config LEDS_TRIGGER_INPUT
 	  This allows the GPIOs assigned to be LEDs to be initialised to inputs.
 	  If unsure, say Y.
 
+config LEDS_TRIGGER_CUSTOM
+	tristate "LED Custom Trigger"
+	depends on LEDS_TRIGGERS
+	help
+		This is a pretty useless trigger written to fiddle around with kernel
+		programming.
+
 endif # LEDS_TRIGGERS
